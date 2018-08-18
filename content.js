@@ -6,7 +6,7 @@ import './${name}.css';
 export default class ${name} extends Component {
     render(){
         return(
-            <div className={${name}}>
+            <div className='${name}'>
                 <h2>Welcome To ${name}</h2>
             </div>
         );
@@ -21,7 +21,7 @@ var withoutStyle = function(name) {
 export default class ${name} extends Component {
     render(){
         return(
-            <div className={${name}}>
+            <div className='${name}'>
                 <h2>Welcome To ${name}</h2>
             </div>
         );
