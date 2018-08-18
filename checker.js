@@ -1,11 +1,11 @@
 const spown = require("child_process").spawn;
 
 let cmd = spown('pwd');
-
+let lscmd = process.platform === 'win32' ? 'dir' : 'ls';
 const checkIfReactApp = () => {
     return new Promise((resolve, reject) => {
         cmd.stdout.on('data', (data) => {
-            let ls = spown('ls',{}, data.toString());
+            let ls = spown(lscmd, {}, data.toString());
             let lsArray = [];
             ls.stdout.on('data', (f) => {
                 lsArray = f.toString().split('\n');
