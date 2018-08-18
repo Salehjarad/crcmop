@@ -10,7 +10,7 @@
 
 
 ### Info: &darr;  
-This Will Allow You To Create React Component Fast When You Use &darr;  
+#### This Will Allow You To Create React Component Fast When You Use: &darr;  
 * `$ create-react-app`
 ---
 
