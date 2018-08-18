@@ -5,9 +5,14 @@
 </p>
 
 --------------
+<p align="center">
+
 **Version (1.9)**
+
+</p>
 --------------
 
+### Info:  
 This Will Allow You To Create React Component Fast When You Use &darr;  
 * `$ create-react-app`
 ---
