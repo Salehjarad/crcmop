@@ -1,6 +1,8 @@
-# CRCMOP
+
 --------------
-![CRCMOP CLI APP](https://image.ibb.co/eFnM2e/crcmop_logo.png)
+<p align="center">
+    <img alt="CRCMOP CLI APP" src="https://image.ibb.co/eFnM2e/crcmop_logo.png" width="638">
+</p>
 
 --------------
 **Version (1.9)**
