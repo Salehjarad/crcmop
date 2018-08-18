@@ -1,13 +1,10 @@
-
+## Create React Component CLI [![NPM version](http://img.shields.io/npm/v/crcmop.svg?style=flat)](https://www.npmjs.com/package/crcmop)
 --------------
 <p align="center">
     <img alt="CRCMOP CLI APP" src="https://image.ibb.co/eFnM2e/crcmop_logo.png" width="638">
 </p>
 
 --------------
-
-**Version: 1.11**
--
 
 ### Info: &darr;  
 #### This Will Allow You To Create React Component Fast When You Use: &darr;  
