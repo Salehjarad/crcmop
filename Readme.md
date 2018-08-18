@@ -12,19 +12,19 @@
 ### Info: &darr;  
 #### This Will Allow You To Create React Component Fast When You Use: &darr;  
 > * `$ create-react-app`
--
+--
 
 ### Installation: &darr;  
 
 > * `$ npm install -g crcmop`
-* You Can Just Add This Command In React App Folder Only.
--
+> * You Can Just Add This Command In React App Folder Only.
+--
 
 ### Usage: &darr;  
 
-* Create component with style => `crcmop add --name home --style --type jsx`
-* Create component without style => `crcmop add --name home --type jsx`
--
+> * Create component with style => `crcmop add --name home --style --type jsx`
+> * Create component without style => `crcmop add --name home --type jsx`
+--
 
 ### Options: &darr;  
 
