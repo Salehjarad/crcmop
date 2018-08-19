@@ -1,4 +1,5 @@
 const spown = require("child_process").spawn;
+const color = require("chalk");
 
 let cmd = spown('pwd');
 let lscmd = process.platform === 'win32' ? 'dir' : 'ls';
@@ -12,7 +13,7 @@ const checkIfReactApp = () => {
                 let newF = lsArray.filter(Boolean);
                 let isReact = newF.indexOf('src');
                 if(isReact === -1 || isReact === undefined) {
-                    return reject('Allowd In React App')
+                    return reject(`\n${color.red('[ This commands works in react or react-native app folder ]')}\n`)
                 } else {
                     resolve({
                         react: true,
