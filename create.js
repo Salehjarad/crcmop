@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const mkdir = require("mkdirp");
 const color = require("chalk");
-const { withStyle, withoutStyle } = require("./content");
+const { withStyle, withoutStyle, createImport } = require("./content");
 const msg = require("./messages");
 const checkIfReact = require("./checker");
 
@@ -35,7 +35,10 @@ const createWithStyle = (name, style, type) => {
                     `.${newName}{}`,
                     err => {
                       if (err) return console.log("Error", err);
-                      msg.success(newName);
+                      fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
+                        if(err) return console.log(err);
+                        msg.success(newName);
+                      });
                     }
                   );
                 }
@@ -76,7 +79,10 @@ const createWithoutStyle = (name, style, type) => {
                 withoutStyle(newName),
                 err => {
                   if (err) return console.log("Error", err);
-                  msg.success(newName);
+                  fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
+                    if(err) return console.log(err);
+                    msg.success(newName);
+                  });
                 }
               );
             });
@@ -129,7 +135,10 @@ const createMultiWithStyle = (name, style, type) => {
                         `.${newName}{}`,
                         err => {
                           if (err) return console.log("Error", err);
-                          msg.success(newName);
+                          fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
+                            if(err) return console.log(err);
+                            msg.success(newName);
+                          });
                         }
                       );
                     }
@@ -184,7 +193,10 @@ const createMultiWithoutStyle = (name, style, type) => {
                     withoutStyle(newName),
                     err => {
                       if (err) return console.log("Error", err);
-                      msg.success(newName);
+                      fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
+                        if(err) return console.log(err);
+                        msg.success(newName);
+                      });
                     }
                   );
                 });

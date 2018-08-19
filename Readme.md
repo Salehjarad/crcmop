@@ -10,6 +10,7 @@
 ### Info: &darr;  
 > #### This Will Allow You To Create React Components From CLI When You Use: &darr;  
 > * `$ create-react-app` OR any React app folder.
+> * crcmop cli will create `index.js` in components folder and export the component you created so you can just import any component you created from components folder `import {< here will be all your components >} from './components/';`
 
 
 ### Installation: &darr;  

@@ -30,6 +30,8 @@ export default class ${name} extends Component {
     `
 }
 
+const createImport = name => `\t\nexport const ${name} = require('./${name}/${name}').default;`;
+
 module.exports = {
-    withStyle, withoutStyle
+    withStyle, withoutStyle, createImport
 }
