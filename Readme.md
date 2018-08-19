@@ -1,15 +1,13 @@
 ## Create React Component CLI [![NPM version](http://img.shields.io/npm/v/crcmop.svg?colorB=red&longCache=true&style=flat-square)](https://www.npmjs.com/package/crcmop)
---------------
+---
+
 <p align="center">
     <img alt="CRCMOP CLI APP" src="https://image.ibb.co/eFnM2e/crcmop_logo.png" width="300">
 </p>
 
---------------
-
 ### Info: &darr;  
-#### This Will Allow You To Create React Component Fast When You Use: &darr;  
-> * `$ create-react-app`
-> * Any React App.
+#### This Will Allow You To Create React Components From CLI When You Use: &darr;  
+> * `$ create-react-app` OR any React app folder.
 
 
 ### Installation: &darr;  
@@ -39,6 +37,8 @@
 
 #### Auther:    
 &copy; Salehjarad
+
+
 ---
 
 #### Working on more fast way to work with react.
