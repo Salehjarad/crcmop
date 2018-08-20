@@ -16,8 +16,9 @@
 
 ### Installation: &darr;  
 
+#### If you on mac or linux sys be sure to use `sudo` before `npm` or `yarn`
 > * `$ npm install -g crcmop`
-> * Add This Command In React App Folder Only.
+> * `$ yarn add global crcmop`
 
 
 ### Usage: &#9728;  
@@ -26,14 +27,18 @@
 > * Create component without style &rarr; ` $ crcmop add home --type jsx`
 > * Create multi components with styles &rarr; ` $ crcmop add home,list,item --style --type jsx`
 > * Create multi components without styles &rarr; ` $ crcmop add home,list,item --type jsx`
+> * Create component with autocomplete for props when you call it from another component: &darr;
+    `$ crcmop add home --style --type jsx --props` 
 > * Defaults: &rarr; [--style: false] &rarr; [--type: js]
+> * type: `$ crcmop add --help` for more help
 
 
 ### Options: &#9783;  
 
 ```js
     -s, --style        Create style with component [default: false]
-    -t, --type <type>  File type [ js | jsx ] [default: js]
+    -t, --type <type>  File type [ js | jsx | tdx ] [default: js]
+    -p, --props        To Create <component.name>.d.ts file for autocomplete props from the component.
     -h, --help         Output usage information
 ```
 

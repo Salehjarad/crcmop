@@ -2,11 +2,17 @@ const path = require("path");
 const fs = require("fs");
 const mkdir = require("mkdirp");
 const color = require("chalk");
-const { withStyle, withoutStyle, createImport } = require("./content");
+const { withStyle, withoutStyle, createImport, createPropsTs } = require("./content");
 const msg = require("./messages");
 const checkIfReact = require("./checker");
 
-const createWithStyle = (name, style, type) => {
+const withProps = (src, name) => {
+  fs.writeFile(src, createPropsTs(name), (err) => {
+    if (err) return console.log(err);
+  })
+};
+
+const createWithStyle = (name, style, type, props) => {
   checkIfReact()
     .then(res => {
       if (!res.react)
@@ -26,8 +32,8 @@ const createWithStyle = (name, style, type) => {
             mkdir(newSrc, err => {
               if (err) return console.log("Error", err);
               fs.writeFile(
-                `${newSrc}/${newName}.${type === "jsx" ? "jsx" : "js"}`,
-                withStyle(newName),
+                `${newSrc}/${newName}.${type === "jsx" || type === "tsx" ? type : "js" || "js"}`,
+                withStyle(newName, props),
                 err => {
                   if (err) return console.log("Error", err);
                   fs.writeFile(
@@ -37,6 +43,9 @@ const createWithStyle = (name, style, type) => {
                       if (err) return console.log("Error", err);
                       fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
                         if(err) return console.log(err);
+                        if(props) {
+                          withProps(`${newSrc}/${newName}.d.ts`, newName)
+                        }
                         msg.success(newName);
                       });
                     }
@@ -55,7 +64,7 @@ const createWithStyle = (name, style, type) => {
     });
 };
 
-const createWithoutStyle = (name, style, type) => {
+const createWithoutStyle = (name, style, type, props) => {
   checkIfReact()
     .then(res => {
       if (!res.react)
@@ -75,12 +84,15 @@ const createWithoutStyle = (name, style, type) => {
             mkdir(newSrc, err => {
               if (err) return console.log("Error", err);
               fs.writeFile(
-                `${newSrc}/${newName}.${type === "jsx" ? "jsx" : "js"}`,
-                withoutStyle(newName),
+                `${newSrc}/${newName}.${type === "jsx" || type === "tsx" ? type : "js" || "js"}`,
+                withoutStyle(newName, props),
                 err => {
                   if (err) return console.log("Error", err);
                   fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
                     if(err) return console.log(err);
+                    if(props) {
+                      withProps(`${newSrc}/${newName}.d.ts`, newName)
+                    }
                     msg.success(newName);
                   });
                 }
@@ -97,7 +109,7 @@ const createWithoutStyle = (name, style, type) => {
     });
 };
 
-const createMultiWithStyle = (name, style, type) => {
+const createMultiWithStyle = (name, style, type, props) => {
   checkIfReact()
     .then(res => {
       if (!res.react)
@@ -125,9 +137,9 @@ const createMultiWithStyle = (name, style, type) => {
                   if (err) return console.log("Error", err);
                   fs.writeFile(
                     `${newSrc}/${newName}.${
-                      type === "jsx" ? "jsx" : "js" || "js"
+                      type === "jsx" || type === "tsx" ? type : "js" || "js"
                     }`,
-                    withStyle(newName),
+                    withStyle(newName, props),
                     err => {
                       if (err) return console.log("Error", err);
                       fs.writeFile(
@@ -137,6 +149,9 @@ const createMultiWithStyle = (name, style, type) => {
                           if (err) return console.log("Error", err);
                           fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
                             if(err) return console.log(err);
+                            if(props) {
+                              withProps(`${newSrc}/${newName}.d.ts`, newName)
+                            }
                             msg.success(newName);
                           });
                         }
@@ -159,7 +174,7 @@ const createMultiWithStyle = (name, style, type) => {
     });
 };
 
-const createMultiWithoutStyle = (name, style, type) => {
+const createMultiWithoutStyle = (name, style, type, props) => {
   checkIfReact()
     .then(res => {
       if (!res.react)
@@ -188,13 +203,16 @@ const createMultiWithoutStyle = (name, style, type) => {
                   if (err) return console.log("Error", err);
                   fs.writeFile(
                     `${newSrc}/${newName}.${
-                      type === "jsx" ? "jsx" : "js" || "js"
+                      type === "jsx" || type === "tsx" ? type : "js" || "js"
                     }`,
-                    withoutStyle(newName),
+                    withoutStyle(newName, props),
                     err => {
                       if (err) return console.log("Error", err);
                       fs.appendFile(`${src}/index.js`, createImport(newName), (err) => {
                         if(err) return console.log(err);
+                        if(props) {
+                          withProps(`${newSrc}/${newName}.d.ts`, newName)
+                        }
                         msg.success(newName);
                       });
                     }
