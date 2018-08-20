@@ -18,7 +18,7 @@
 
 #### If you on mac or linux sys be sure to use `sudo` before `npm` or `yarn`
 > * `$ npm install -g crcmop`
-> * `$ yarn add global crcmop`
+> * `$ yarn global add crcmop`
 
 
 ### Usage: &#9728;  
