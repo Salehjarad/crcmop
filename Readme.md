@@ -63,13 +63,13 @@
 >           * Home.d.ts
 >           * Home.jsx
 
-> * Defaults: &darr;
+> * Options Defaults: &darr;
 
-| Command  | Default |
+| Option  | Default |
 | ------------- | ------------- |
-| `--type`  | js  |
-| `--style`  | false  |
-| `--props`  | false  |
+| `--type` | **js** |
+| `--style` | **false** |
+| `--props` | **false** |
 
 > * type: `$ crcmop add --help` for more help
 
