@@ -14,55 +14,54 @@
 > * `import {< here will be all your components >} from './components/';`
 
 
-### Installation: &darr;  
+### Installation: :rocket:  
 
 #### If you on mac or linux sys be sure to use `sudo` before `npm` or `yarn`
 > * `$ npm install -g crcmop`
 > * `$ yarn global add crcmop`
 
 
-### Usage: &#9728;  
+### Usage: :monkey: &#9728;  
 
 > * Create component with style &rarr; ` $ crcmop add home --style --type jsx`
-    **This will create in "src/components"
-    * :open_file_folder: Home
-        * Home.jsx
-        * Home.css
+>   * This will create in "src/components"
+>       * :open_file_folder: Home
+>           * Home.jsx
+>           * Home.css
 
 > * Create component without style &rarr; ` $ crcmop add home --type jsx`
-    **This will create in "src/components"
-    * :open_file_folder: Home
-        * Home.jsx
+>   * This will create in "src/components"
+>       * :open_file_folder: Home
+>           * Home.jsx
 
 > * Create multi components with styles &rarr; ` $ crcmop add home,list,item --style --type jsx`
-    **This will create in "src/components"
-    * :open_file_folder: Home
-        * Home.css
-        * Home.jsx
-    * :open_file_folder: List
-        * List.css
-        * List.jsx
-    * :open_file_folder: Item
-        * Item.css
-        * Item.jsx
+>   * This will create in "src/components"
+>       * :open_file_folder: Home
+>           * Home.css
+>           * Home.jsx
+>       * :open_file_folder: List
+>           * List.css
+>           * List.jsx
+>       * :open_file_folder: Item
+>           * Item.css
+>           * Item.jsx
 
 > * Create multi components without styles &rarr; ` $ crcmop add home,list,item --type jsx`
-    **This will create in "src/components"
-    * :open_file_folder: Home
-        * Home.jsx
-    * :open_file_folder: List
-        * List.jsx
-    * :open_file_folder: Item
-        * Item.jsx
+>   * This will create in "src/components"
+>       * :open_file_folder: Home
+>           * Home.jsx
+>       * :open_file_folder: List
+>           * List.jsx
+>       * :open_file_folder: Item
+>           * Item.jsx
 
 > * Create component with autocomplete for props when you call it from another component: &darr;  
-
-    `$ crcmop add home --style --type jsx --props`
-        **This will create in "src/components"
-            * :open_file_folder: Home
-                * Home.css
-                * Home.d.ts
-                * Home.jsx
+>  `$ crcmop add home --style --type jsx --props`
+>   * This will create in "src/components"
+>       * :open_file_folder: Home
+>           * Home.css
+>           * Home.d.ts
+>           * Home.jsx
 
 > * Defaults: &rarr; [--style: false] &rarr; [--type: js]
 > * type: `$ crcmop add --help` for more help
