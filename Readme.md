@@ -62,16 +62,16 @@
 >           * Home.css
 >           * Home.d.ts
 >           * Home.jsx
+> * type: `$ crcmop add --help` for more help
 
-> * Options Defaults: &darr;
+
+### Options Defaults: :blush: &darr;
 
 | Option  | Default |
 | ------------- | ------------- |
 | `--type` | **js** |
 | `--style` | **false** |
 | `--props` | **false** |
-
-> * type: `$ crcmop add --help` for more help
 
 
 ### Options: &#9783;  
