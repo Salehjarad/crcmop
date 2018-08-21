@@ -1,4 +1,4 @@
-## Create React Component CLI [![NPM version](http://img.shields.io/npm/v/crcmop.svg?colorB=red&longCache=true&style=flat-square)](https://www.npmjs.com/package/crcmop)
+## React Component CLI [![NPM version](http://img.shields.io/npm/v/crcmop.svg?colorB=red&longCache=true&style=flat-square)](https://www.npmjs.com/package/crcmop)
 ---
 
 <p align="center">
@@ -24,11 +24,46 @@
 ### Usage: &#9728;  
 
 > * Create component with style &rarr; ` $ crcmop add home --style --type jsx`
+    **This will create in "src/components"
+    * :open_file_folder: Home
+        * Home.jsx
+        * Home.css
+
 > * Create component without style &rarr; ` $ crcmop add home --type jsx`
+    **This will create in "src/components"
+    * :open_file_folder: Home
+        * Home.jsx
+
 > * Create multi components with styles &rarr; ` $ crcmop add home,list,item --style --type jsx`
+    **This will create in "src/components"
+    * :open_file_folder: Home
+        * Home.css
+        * Home.jsx
+    * :open_file_folder: List
+        * List.css
+        * List.jsx
+    * :open_file_folder: Item
+        * Item.css
+        * Item.jsx
+
 > * Create multi components without styles &rarr; ` $ crcmop add home,list,item --type jsx`
-> * Create component with autocomplete for props when you call it from another component: &darr;
-    `$ crcmop add home --style --type jsx --props` 
+    **This will create in "src/components"
+    * :open_file_folder: Home
+        * Home.jsx
+    * :open_file_folder: List
+        * List.jsx
+    * :open_file_folder: Item
+        * Item.jsx
+
+> * Create component with autocomplete for props when you call it from another component: &darr;  
+
+    `$ crcmop add home --style --type jsx --props`
+        **This will create in "src/components"
+            * :open_file_folder: Home
+                * Home.css
+                * Home.d.ts
+                * Home.jsx
+
 > * Defaults: &rarr; [--style: false] &rarr; [--type: js]
 > * type: `$ crcmop add --help` for more help
 

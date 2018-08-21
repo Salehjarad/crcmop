@@ -127,7 +127,7 @@ const createMultiWithStyle = (name, style, type, props) => {
           let newSrc = path.join(src, newName);
 
           if (fs.existsSync(newSrc)) {
-            return msg.exists(newName);
+            msg.exists(newName);
           }
 
           if (style === true) {
@@ -193,7 +193,7 @@ const createMultiWithoutStyle = (name, style, type, props) => {
           let newSrc = path.join(src, newName);
 
           if (fs.existsSync(newSrc)) {
-            return msg.exists(newName);
+            msg.exists(newName);
           }
 
           if (style !== true) {
