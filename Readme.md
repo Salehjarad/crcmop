@@ -64,11 +64,13 @@
 >           * Home.jsx
 
 > * Defaults: &darr;
-|   Command  |  Default |
-| --- | --- |
-| `--type` | js |
-| `--style` | false |
-| `--props` | false |
+
+| Command  | Default |
+| ------------- | ------------- |
+| `--type`  | js  |
+| `--style`  | false  |
+| `--props`  | false  |
+
 > * type: `$ crcmop add --help` for more help
 
 
