@@ -68,7 +68,7 @@
 ### Options Defaults: :blush: &darr;
 
 | Option  | Default |
-| ------------- | ------------- |
+| :-------------: | :-------------: |
 | `--type` | **js** |
 | `--style` | **false** |
 | `--props` | **false** |
