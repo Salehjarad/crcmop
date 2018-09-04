@@ -1,4 +1,4 @@
-## React Component CLI [![NPM version](http://img.shields.io/npm/v/crcmop.svg?colorB=red&longCache=true&style=flat-square)](https://www.npmjs.com/package/crcmop)
+## React Component CLI [![NPM version](https://img.gitbutn.io/badges/?&title=crcmop&sub=Gitbutn&icon=yarn&lco=E34A49&rco=f2f2f2&ltc=fff&rtc=E34A49)](https://www.npmjs.com/package/crcmop)
 ---
 
 <p align="center">
